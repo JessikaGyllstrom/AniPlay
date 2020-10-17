@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,21 @@
 		443B7751253B882A008C04F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443B774F253B882A008C04F8 /* Main.storyboard */; };
 		443B7753253B882E008C04F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443B7752253B882E008C04F8 /* Assets.xcassets */; };
 		443B7756253B882E008C04F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443B7754253B882E008C04F8 /* LaunchScreen.storyboard */; };
+		443B775F253B8A1C008C04F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 443B775E253B8A1C008C04F8 /* GoogleService-Info.plist */; };
+		443B776F253B90D4008C04F8 /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B776E253B90D4008C04F8 /* ViewControllerTwo.swift */; };
+		443B7772253B90E7008C04F8 /* ViewControllerThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B7771253B90E7008C04F8 /* ViewControllerThree.swift */; };
+		443B7775253B90FB008C04F8 /* ViewControllerFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B7774253B90FB008C04F8 /* ViewControllerFour.swift */; };
+		443B7778253B9111008C04F8 /* ViewControllerFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B7777253B9111008C04F8 /* ViewControllerFive.swift */; };
+		443B777B253B9123008C04F8 /* ViewControllerSix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B777A253B9123008C04F8 /* ViewControllerSix.swift */; };
+		443B777E253B9136008C04F8 /* ViewControllerSeven.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B777D253B9136008C04F8 /* ViewControllerSeven.swift */; };
+		443B7781253B915B008C04F8 /* ViewControllerEight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B7780253B915B008C04F8 /* ViewControllerEight.swift */; };
+		443B7784253B9170008C04F8 /* ViewControllerNine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B7783253B9170008C04F8 /* ViewControllerNine.swift */; };
+		443B7787253B9183008C04F8 /* ViewControllerTen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B7786253B9183008C04F8 /* ViewControllerTen.swift */; };
+		D9EBD56C861C331195A3BBA5 /* Pods_AniPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1FC2B735BE06F5D860670B1 /* Pods_AniPlay.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09392D20D26E4808D81CC4D5 /* Pods-AniPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AniPlay.release.xcconfig"; path = "Target Support Files/Pods-AniPlay/Pods-AniPlay.release.xcconfig"; sourceTree = "<group>"; };
 		443B7746253B882A008C04F8 /* AniPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AniPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443B7749253B882A008C04F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		443B774B253B882A008C04F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +36,18 @@
 		443B7752253B882E008C04F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		443B7755253B882E008C04F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		443B7757253B882E008C04F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		443B775E253B8A1C008C04F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		443B776E253B90D4008C04F8 /* ViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
+		443B7771253B90E7008C04F8 /* ViewControllerThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerThree.swift; sourceTree = "<group>"; };
+		443B7774253B90FB008C04F8 /* ViewControllerFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFour.swift; sourceTree = "<group>"; };
+		443B7777253B9111008C04F8 /* ViewControllerFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFive.swift; sourceTree = "<group>"; };
+		443B777A253B9123008C04F8 /* ViewControllerSix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSix.swift; sourceTree = "<group>"; };
+		443B777D253B9136008C04F8 /* ViewControllerSeven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSeven.swift; sourceTree = "<group>"; };
+		443B7780253B915B008C04F8 /* ViewControllerEight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerEight.swift; sourceTree = "<group>"; };
+		443B7783253B9170008C04F8 /* ViewControllerNine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerNine.swift; sourceTree = "<group>"; };
+		443B7786253B9183008C04F8 /* ViewControllerTen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTen.swift; sourceTree = "<group>"; };
+		8FD197F9903D45BEF56A4FF8 /* Pods-AniPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AniPlay.debug.xcconfig"; path = "Target Support Files/Pods-AniPlay/Pods-AniPlay.debug.xcconfig"; sourceTree = "<group>"; };
+		F1FC2B735BE06F5D860670B1 /* Pods_AniPlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AniPlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +55,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9EBD56C861C331195A3BBA5 /* Pods_AniPlay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0063A16BD21B92EA544A29E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FD197F9903D45BEF56A4FF8 /* Pods-AniPlay.debug.xcconfig */,
+				09392D20D26E4808D81CC4D5 /* Pods-AniPlay.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		443B773D253B882A008C04F8 = {
 			isa = PBXGroup;
 			children = (
 				443B7748253B882A008C04F8 /* AniPlay */,
 				443B7747253B882A008C04F8 /* Products */,
+				0063A16BD21B92EA544A29E5 /* Pods */,
+				E8FD3A994B4947BD91DA63D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +95,30 @@
 				443B7749253B882A008C04F8 /* AppDelegate.swift */,
 				443B774B253B882A008C04F8 /* SceneDelegate.swift */,
 				443B774D253B882A008C04F8 /* ViewController.swift */,
+				443B776E253B90D4008C04F8 /* ViewControllerTwo.swift */,
+				443B7771253B90E7008C04F8 /* ViewControllerThree.swift */,
+				443B7774253B90FB008C04F8 /* ViewControllerFour.swift */,
+				443B7777253B9111008C04F8 /* ViewControllerFive.swift */,
+				443B777A253B9123008C04F8 /* ViewControllerSix.swift */,
+				443B777D253B9136008C04F8 /* ViewControllerSeven.swift */,
+				443B7780253B915B008C04F8 /* ViewControllerEight.swift */,
+				443B7783253B9170008C04F8 /* ViewControllerNine.swift */,
+				443B7786253B9183008C04F8 /* ViewControllerTen.swift */,
+				443B775E253B8A1C008C04F8 /* GoogleService-Info.plist */,
 				443B774F253B882A008C04F8 /* Main.storyboard */,
 				443B7752253B882E008C04F8 /* Assets.xcassets */,
 				443B7754253B882E008C04F8 /* LaunchScreen.storyboard */,
 				443B7757253B882E008C04F8 /* Info.plist */,
 			);
 			path = AniPlay;
+			sourceTree = "<group>";
+		};
+		E8FD3A994B4947BD91DA63D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1FC2B735BE06F5D860670B1 /* Pods_AniPlay.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 443B775A253B882E008C04F8 /* Build configuration list for PBXNativeTarget "AniPlay" */;
 			buildPhases = (
+				AABDFA144AEF8184049514B6 /* [CP] Check Pods Manifest.lock */,
 				443B7742253B882A008C04F8 /* Sources */,
 				443B7743253B882A008C04F8 /* Frameworks */,
 				443B7744253B882A008C04F8 /* Resources */,
+				2911E2F0C651D6B7E0385F9A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				443B7756253B882E008C04F8 /* LaunchScreen.storyboard in Resources */,
+				443B775F253B8A1C008C04F8 /* GoogleService-Info.plist in Resources */,
 				443B7753253B882E008C04F8 /* Assets.xcassets in Resources */,
 				443B7751253B882A008C04F8 /* Main.storyboard in Resources */,
 			);
@@ -132,14 +189,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2911E2F0C651D6B7E0385F9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AniPlay/Pods-AniPlay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AniPlay/Pods-AniPlay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AniPlay/Pods-AniPlay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AABDFA144AEF8184049514B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AniPlay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		443B7742253B882A008C04F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				443B7772253B90E7008C04F8 /* ViewControllerThree.swift in Sources */,
 				443B774E253B882A008C04F8 /* ViewController.swift in Sources */,
+				443B7775253B90FB008C04F8 /* ViewControllerFour.swift in Sources */,
 				443B774A253B882A008C04F8 /* AppDelegate.swift in Sources */,
 				443B774C253B882A008C04F8 /* SceneDelegate.swift in Sources */,
+				443B777B253B9123008C04F8 /* ViewControllerSix.swift in Sources */,
+				443B777E253B9136008C04F8 /* ViewControllerSeven.swift in Sources */,
+				443B776F253B90D4008C04F8 /* ViewControllerTwo.swift in Sources */,
+				443B7787253B9183008C04F8 /* ViewControllerTen.swift in Sources */,
+				443B7781253B915B008C04F8 /* ViewControllerEight.swift in Sources */,
+				443B7778253B9111008C04F8 /* ViewControllerFive.swift in Sources */,
+				443B7784253B9170008C04F8 /* ViewControllerNine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +391,7 @@
 		};
 		443B775B253B882E008C04F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FD197F9903D45BEF56A4FF8 /* Pods-AniPlay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +410,7 @@
 		};
 		443B775C253B882E008C04F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09392D20D26E4808D81CC4D5 /* Pods-AniPlay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
