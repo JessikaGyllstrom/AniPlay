@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		442CF2FD253DEBB0005FC60F /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442CF2FC253DEBB0005FC60F /* ViewController2.swift */; };
 		443B774A253B882A008C04F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B7749253B882A008C04F8 /* AppDelegate.swift */; };
 		443B774C253B882A008C04F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B774B253B882A008C04F8 /* SceneDelegate.swift */; };
 		443B774E253B882A008C04F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B774D253B882A008C04F8 /* ViewController.swift */; };
@@ -14,7 +15,6 @@
 		443B7753253B882E008C04F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443B7752253B882E008C04F8 /* Assets.xcassets */; };
 		443B7756253B882E008C04F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443B7754253B882E008C04F8 /* LaunchScreen.storyboard */; };
 		443B775F253B8A1C008C04F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 443B775E253B8A1C008C04F8 /* GoogleService-Info.plist */; };
-		443B776F253B90D4008C04F8 /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B776E253B90D4008C04F8 /* ViewControllerTwo.swift */; };
 		443B7772253B90E7008C04F8 /* ViewControllerThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B7771253B90E7008C04F8 /* ViewControllerThree.swift */; };
 		443B7775253B90FB008C04F8 /* ViewControllerFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B7774253B90FB008C04F8 /* ViewControllerFour.swift */; };
 		443B7778253B9111008C04F8 /* ViewControllerFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B7777253B9111008C04F8 /* ViewControllerFive.swift */; };
@@ -28,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		09392D20D26E4808D81CC4D5 /* Pods-AniPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AniPlay.release.xcconfig"; path = "Target Support Files/Pods-AniPlay/Pods-AniPlay.release.xcconfig"; sourceTree = "<group>"; };
+		442CF2FC253DEBB0005FC60F /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		443B7746253B882A008C04F8 /* AniPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AniPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443B7749253B882A008C04F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		443B774B253B882A008C04F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +38,6 @@
 		443B7755253B882E008C04F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		443B7757253B882E008C04F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		443B775E253B8A1C008C04F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		443B776E253B90D4008C04F8 /* ViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
 		443B7771253B90E7008C04F8 /* ViewControllerThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerThree.swift; sourceTree = "<group>"; };
 		443B7774253B90FB008C04F8 /* ViewControllerFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFour.swift; sourceTree = "<group>"; };
 		443B7777253B9111008C04F8 /* ViewControllerFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFive.swift; sourceTree = "<group>"; };
@@ -95,8 +95,8 @@
 				443B7749253B882A008C04F8 /* AppDelegate.swift */,
 				443B774B253B882A008C04F8 /* SceneDelegate.swift */,
 				443B774D253B882A008C04F8 /* ViewController.swift */,
-				443B776E253B90D4008C04F8 /* ViewControllerTwo.swift */,
 				443B7771253B90E7008C04F8 /* ViewControllerThree.swift */,
+				442CF2FC253DEBB0005FC60F /* ViewController2.swift */,
 				443B7774253B90FB008C04F8 /* ViewControllerFour.swift */,
 				443B7777253B9111008C04F8 /* ViewControllerFive.swift */,
 				443B777A253B9123008C04F8 /* ViewControllerSix.swift */,
@@ -241,9 +241,9 @@
 				443B7775253B90FB008C04F8 /* ViewControllerFour.swift in Sources */,
 				443B774A253B882A008C04F8 /* AppDelegate.swift in Sources */,
 				443B774C253B882A008C04F8 /* SceneDelegate.swift in Sources */,
+				442CF2FD253DEBB0005FC60F /* ViewController2.swift in Sources */,
 				443B777B253B9123008C04F8 /* ViewControllerSix.swift in Sources */,
 				443B777E253B9136008C04F8 /* ViewControllerSeven.swift in Sources */,
-				443B776F253B90D4008C04F8 /* ViewControllerTwo.swift in Sources */,
 				443B7787253B9183008C04F8 /* ViewControllerTen.swift in Sources */,
 				443B7781253B915B008C04F8 /* ViewControllerEight.swift in Sources */,
 				443B7778253B9111008C04F8 /* ViewControllerFive.swift in Sources */,
