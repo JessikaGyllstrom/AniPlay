@@ -20,8 +20,11 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AffinityBG" translatesAutoresizingMaskIntoConstraints="NO" id="AjZ-v0-2DV">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Glk-uQ-V4H">
-                                <rect key="frame" x="55" y="336" width="290.5" height="290.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled (21)" translatesAutoresizingMaskIntoConstraints="NO" id="UdZ-NH-RXd">
+                                <rect key="frame" x="55" y="635" width="291" height="262"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Glk-uQ-V4H">
+                                <rect key="frame" x="-21" y="238" width="435" height="420"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <color key="tintColor" systemColor="systemGreenColor"/>
@@ -46,10 +49,16 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Glk-uQ-V4H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="285" id="2BV-t0-iVQ"/>
+                            <constraint firstItem="Glk-uQ-V4H" firstAttribute="centerY" secondItem="AjZ-v0-2DV" secondAttribute="centerY" id="0Fx-GF-shU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UdZ-NH-RXd" secondAttribute="trailing" constant="68" id="0Xq-Fu-e7M"/>
+                            <constraint firstItem="Glk-uQ-V4H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-41" id="7Tb-Wy-mSV"/>
+                            <constraint firstItem="Glk-uQ-V4H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="194" id="8id-TD-2Dn"/>
                             <constraint firstItem="AjZ-v0-2DV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="D1c-4m-MC9"/>
-                            <constraint firstItem="Glk-uQ-V4H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="120" id="JkQ-Dq-gEF"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="UdZ-NH-RXd" secondAttribute="bottom" constant="-35" id="cfj-K9-pXC"/>
+                            <constraint firstItem="UdZ-NH-RXd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="hNR-cy-6bN"/>
+                            <constraint firstItem="Glk-uQ-V4H" firstAttribute="trailing" secondItem="AjZ-v0-2DV" secondAttribute="trailing" id="wLi-3I-4EI"/>
                             <constraint firstItem="AjZ-v0-2DV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xfx-WT-Fdm"/>
+                            <constraint firstItem="UdZ-NH-RXd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="591" id="zi0-V2-4aH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0HI-AV-XRz"/>
@@ -180,7 +189,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tZp-Qd-fRe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="728.98550724637687" y="47.544642857142854"/>
+            <point key="canvasLocation" x="643" y="48"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Nv0-zR-al1">
@@ -222,6 +231,7 @@
         <image name="AffinityBG" width="414" height="896"/>
         <image name="ButtTrans" width="290.66665649414062" height="290.66665649414062"/>
         <image name="Untitled (20)" width="600" height="800"/>
+        <image name="Untitled (21)" width="600" height="800"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
