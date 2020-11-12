@@ -53,13 +53,21 @@ class ViewController2: UIViewController {
 
         
     
-        animals.append(Animal(na: "KO", im: "cow@2x"))
-        animals.append(Animal(na: "FISK", im: "fish@2x"))
-        animals.append(Animal(na: "HUND", im: "dog@2x"))
-        animals.append(Animal(na: "FÅGEL", im: "bird@2x"))
-        animals.append(Animal(na: "KATT", im: "Cat@3x"))
-        animals.append(Animal(na: "UGGLA", im: "owl@2x"))
-        animals.append(Animal(na: "FÅR", im: "sheep@2x"))
+        animals.append(Animal(na: "Cow", im: "cow"))
+        animals.append(Animal(na: "Fish", im: "fish"))
+        animals.append(Animal(na: "Dog", im: "dog"))
+        animals.append(Animal(na: "Bird", im: "bird"))
+        animals.append(Animal(na: "Cat", im: "Cat"))
+        animals.append(Animal(na: "Owl", im: "owl"))
+        animals.append(Animal(na: "Snake", im: "snake"))
+        animals.append(Animal(na: "Bat", im: "bat"))
+        animals.append(Animal(na: "Fox", im: "fox"))
+        animals.append(Animal(na: "Monkey", im: "monkey"))
+        animals.append(Animal(na: "Pig", im: "pig"))
+        animals.append(Animal(na: "Snail", im: "snail"))
+        animals.append(Animal(na: "Rabbit", im: "rabbit"))
+
+
 
         //correct = animals.randomElement()!
         
