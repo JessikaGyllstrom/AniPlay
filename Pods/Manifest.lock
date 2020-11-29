@@ -69,10 +69,12 @@ PODS:
   - nanopb/decode (1.30906.0)
   - nanopb/encode (1.30906.0)
   - PromisesObjC (1.2.10)
+  - SAConfettiView (0.1.8)
 
 DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Storage
+  - SAConfettiView
 
 SPEC REPOS:
   trunk:
@@ -88,6 +90,7 @@ SPEC REPOS:
     - GTMSessionFetcher
     - nanopb
     - PromisesObjC
+    - SAConfettiView
 
 SPEC CHECKSUMS:
   Firebase: 8db6f2d1b2c5e2984efba4949a145875a8f65fe5
@@ -102,7 +105,8 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
+  SAConfettiView: c87031a2280659261b730fce3669fb10e73636ee
 
-PODFILE CHECKSUM: a7ce7a39511fc7a0058411332e62d9c616e549fb
+PODFILE CHECKSUM: c754436fd319c082bb3bf3ad838bf5f0a6adece9
 
 COCOAPODS: 1.9.3

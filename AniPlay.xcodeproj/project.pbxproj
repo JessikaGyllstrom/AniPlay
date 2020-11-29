@@ -15,6 +15,10 @@
 		443B7753253B882E008C04F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443B7752253B882E008C04F8 /* Assets.xcassets */; };
 		443B7756253B882E008C04F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443B7754253B882E008C04F8 /* LaunchScreen.storyboard */; };
 		443B775F253B8A1C008C04F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 443B775E253B8A1C008C04F8 /* GoogleService-Info.plist */; };
+		446144BD256C49C700939AED /* WinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446144BC256C49C700939AED /* WinViewController.swift */; };
+		446144D2256C6FA800939AED /* doh.wav in Resources */ = {isa = PBXBuildFile; fileRef = 446144D1256C6FA800939AED /* doh.wav */; };
+		4463B07B256BA850003650F5 /* cheer.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4463B07A256BA850003650F5 /* cheer.wav */; };
+		447A572F256BBE2F00056186 /* stars.sks in Resources */ = {isa = PBXBuildFile; fileRef = 447A572E256BBE2F00056186 /* stars.sks */; };
 		44DA6A75254DE25B007C5303 /* bgmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44DA6A74254DE25B007C5303 /* bgmusic.mp3 */; };
 		44DA6A79254DEE79007C5303 /* yay.wav in Resources */ = {isa = PBXBuildFile; fileRef = 44DA6A78254DEE79007C5303 /* yay.wav */; };
 		D9EBD56C861C331195A3BBA5 /* Pods_AniPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1FC2B735BE06F5D860670B1 /* Pods_AniPlay.framework */; };
@@ -32,6 +36,10 @@
 		443B7755253B882E008C04F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		443B7757253B882E008C04F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		443B775E253B8A1C008C04F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		446144BC256C49C700939AED /* WinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinViewController.swift; sourceTree = "<group>"; };
+		446144D1256C6FA800939AED /* doh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = doh.wav; path = ../../../../../Downloads/doh.wav; sourceTree = "<group>"; };
+		4463B07A256BA850003650F5 /* cheer.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = cheer.wav; path = ../cheer.wav; sourceTree = "<group>"; };
+		447A572E256BBE2F00056186 /* stars.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = stars.sks; sourceTree = "<group>"; };
 		44DA6A74254DE25B007C5303 /* bgmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgmusic.mp3; sourceTree = "<group>"; };
 		44DA6A78254DEE79007C5303 /* yay.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = yay.wav; sourceTree = "<group>"; };
 		8FD197F9903D45BEF56A4FF8 /* Pods-AniPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AniPlay.debug.xcconfig"; path = "Target Support Files/Pods-AniPlay/Pods-AniPlay.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,11 +88,13 @@
 		443B7748253B882A008C04F8 /* AniPlay */ = {
 			isa = PBXGroup;
 			children = (
+				447A572E256BBE2F00056186 /* stars.sks */,
 				443B7749253B882A008C04F8 /* AppDelegate.swift */,
 				443B774B253B882A008C04F8 /* SceneDelegate.swift */,
 				443B774D253B882A008C04F8 /* ViewController.swift */,
 				442CF2FC253DEBB0005FC60F /* ViewController2.swift */,
 				443B775E253B8A1C008C04F8 /* GoogleService-Info.plist */,
+				446144BC256C49C700939AED /* WinViewController.swift */,
 				443B774F253B882A008C04F8 /* Main.storyboard */,
 				443B7752253B882E008C04F8 /* Assets.xcassets */,
 				443B7754253B882E008C04F8 /* LaunchScreen.storyboard */,
@@ -97,6 +107,8 @@
 		44DA6A73254DE236007C5303 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				446144D1256C6FA800939AED /* doh.wav */,
+				4463B07A256BA850003650F5 /* cheer.wav */,
 				44DA6A78254DEE79007C5303 /* yay.wav */,
 				44DA6A74254DE25B007C5303 /* bgmusic.mp3 */,
 			);
@@ -123,6 +135,7 @@
 				443B7743253B882A008C04F8 /* Frameworks */,
 				443B7744253B882A008C04F8 /* Resources */,
 				2911E2F0C651D6B7E0385F9A /* [CP] Embed Pods Frameworks */,
+				18FFE154077017AD1933BF42 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -172,16 +185,36 @@
 			files = (
 				44DA6A79254DEE79007C5303 /* yay.wav in Resources */,
 				44DA6A75254DE25B007C5303 /* bgmusic.mp3 in Resources */,
+				4463B07B256BA850003650F5 /* cheer.wav in Resources */,
+				446144D2256C6FA800939AED /* doh.wav in Resources */,
 				443B7756253B882E008C04F8 /* LaunchScreen.storyboard in Resources */,
 				443B775F253B8A1C008C04F8 /* GoogleService-Info.plist in Resources */,
 				443B7753253B882E008C04F8 /* Assets.xcassets in Resources */,
 				443B7751253B882A008C04F8 /* Main.storyboard in Resources */,
+				447A572F256BBE2F00056186 /* stars.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		18FFE154077017AD1933BF42 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AniPlay/Pods-AniPlay-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AniPlay/Pods-AniPlay-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AniPlay/Pods-AniPlay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2911E2F0C651D6B7E0385F9A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,6 +265,7 @@
 				443B774A253B882A008C04F8 /* AppDelegate.swift in Sources */,
 				443B774C253B882A008C04F8 /* SceneDelegate.swift in Sources */,
 				442CF2FD253DEBB0005FC60F /* ViewController2.swift in Sources */,
+				446144BD256C49C700939AED /* WinViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
