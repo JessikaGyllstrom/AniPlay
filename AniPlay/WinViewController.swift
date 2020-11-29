@@ -13,6 +13,9 @@ import FirebaseStorage
 
 class WinViewController: UIViewController {
     
+    @IBOutlet weak var thumb: UIImageView!
+    @IBOutlet weak var thumbCon: NSLayoutConstraint!
+    
     var audioPlayer = AVAudioPlayer()
 
  
@@ -20,6 +23,13 @@ class WinViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        UIView.animate(withDuration: 1.2, delay: 0.1, options: [.curveEaseIn, .repeat], animations: {
+            self.thumb.frame.origin.y -= 150
+        },
+        completion: nil
+            )
+        
         addStars()
     }
     private func addStars() {

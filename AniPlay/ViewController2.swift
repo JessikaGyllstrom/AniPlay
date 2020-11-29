@@ -36,9 +36,7 @@ class ViewController2: UIViewController {
     var wrongNumber = 0
     
     
-
     @IBOutlet weak var button1: UIButton!
-    
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button3: UIButton!
     @IBOutlet weak var button4: UIButton!
@@ -120,6 +118,13 @@ class ViewController2: UIViewController {
     
     func newRound()
     {
+        button1.backgroundColor = UIColor.clear
+        button2.backgroundColor = UIColor.clear
+        button3.backgroundColor = UIColor.clear
+        button4.backgroundColor = UIColor.clear
+
+
+
         playerBgMusic.play()
 
 
@@ -130,26 +135,30 @@ class ViewController2: UIViewController {
         Correct.text = animals[correctNumber].name
         
         button1.setImage(UIImage(named: animals[0].image), for: .normal)
+
         button2.setImage(UIImage(named: animals[1].image), for: .normal)
+
         button3.setImage(UIImage(named: animals[2].image), for: .normal)
+
         button4.setImage(UIImage(named: animals[3].image), for: .normal)
+
 
     }
     
-    @IBAction func Button(_ sender: Any) {
-        
-        if(correctNumber == 0)
+    @IBAction func button1(_ sender: Any) {
+    
+    if(correctNumber == 0)
         {
-
             print("YEY RÄTT")
             answerCorrect()
             
         } else {
-            
+            button1.backgroundColor = UIColor.red
+
             print("NEJ FEL")
             answerWrong()
         }
-        
+
     }
     @IBAction func Button2(_ sender: Any) {
         if(correctNumber == 1)
@@ -159,6 +168,7 @@ class ViewController2: UIViewController {
             answerCorrect()
             
         } else {
+            button2.backgroundColor = UIColor.red
             print("NEJ FEL")
             answerWrong()
         }
@@ -171,6 +181,8 @@ class ViewController2: UIViewController {
             print("YEY RÄTT")
             answerCorrect()
         } else {
+            button3.backgroundColor = UIColor.red
+
             print("NEJ FEL")
             answerWrong()
         }
@@ -182,7 +194,9 @@ class ViewController2: UIViewController {
             print("YEY RÄTT")
             answerCorrect()
         } else {
-            print("NEJ FEL")
+            button4.backgroundColor = UIColor.red
+
+             print("NEJ FEL")
             answerWrong()
         }
         
@@ -211,6 +225,7 @@ class ViewController2: UIViewController {
     
     func answerWrong()
     {
+        
         playerDoh.play()
         scoreLbl.text = "Score: \(points)"
 
@@ -220,9 +235,9 @@ class ViewController2: UIViewController {
     {
     performSegue(withIdentifier: "showWinner", sender: self)
     }
-           
-            
     }
+            
+
         
     
 

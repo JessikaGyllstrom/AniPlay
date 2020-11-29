@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     var audioPlayer = AVAudioPlayer()
     
+    @IBOutlet weak var playB: UIButton!
     @IBOutlet weak var PawButton: UIButton!
     
     @IBOutlet weak var PawButtonCon: NSLayoutConstraint!
