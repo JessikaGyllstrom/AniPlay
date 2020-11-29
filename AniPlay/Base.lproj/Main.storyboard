@@ -240,34 +240,49 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled (20)" translatesAutoresizingMaskIntoConstraints="NO" id="i4R-g6-kRq">
-                                <rect key="frame" x="20" y="125" width="367" height="592"/>
+                                <rect key="frame" x="20" y="43" width="367" height="592"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="592" id="0zg-IE-Q8c"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 20/20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="of8-yM-uP1">
-                                <rect key="frame" x="86" y="694" width="242" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bunny" translatesAutoresizingMaskIntoConstraints="NO" id="tC0-ih-0ru">
+                                <rect key="frame" x="181" y="433" width="400" height="426"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="diw-fY-MFe"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumbs" translatesAutoresizingMaskIntoConstraints="NO" id="gdN-zB-wU8">
+                                <rect key="frame" x="20" y="709" width="410" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="9OW-WD-8Fx"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Score: 20/20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="of8-yM-uP1">
+                                <rect key="frame" x="88" y="588" width="239" height="97"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <color key="textColor" red="0.2478021592801242" green="0.63177485385254095" blue="0.69144590736040601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bunny" translatesAutoresizingMaskIntoConstraints="NO" id="tC0-ih-0ru">
-                                <rect key="frame" x="197" y="493" width="332" height="354"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thumbs" translatesAutoresizingMaskIntoConstraints="NO" id="gdN-zB-wU8">
-                                <rect key="frame" x="0.0" y="694" width="487" height="193"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XMf-a5-Qqh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="i4R-g6-kRq" firstAttribute="leading" secondItem="Yvq-a3-Ayv" secondAttribute="leadingMargin" id="Gl0-2b-lka"/>
-                            <constraint firstItem="i4R-g6-kRq" firstAttribute="centerY" secondItem="Yvq-a3-Ayv" secondAttribute="centerY" id="JSq-e7-rf6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gdN-zB-wU8" secondAttribute="trailing" constant="-36" id="CJa-Aw-eS8"/>
+                            <constraint firstItem="tC0-ih-0ru" firstAttribute="top" secondItem="XMf-a5-Qqh" secondAttribute="top" constant="433" id="IIe-TG-E8u"/>
+                            <constraint firstItem="of8-yM-uP1" firstAttribute="leading" secondItem="XMf-a5-Qqh" secondAttribute="leading" constant="88" id="MRf-jR-XnZ"/>
+                            <constraint firstItem="gdN-zB-wU8" firstAttribute="top" secondItem="of8-yM-uP1" secondAttribute="bottom" constant="24" id="T0u-Fo-r6N"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="gdN-zB-wU8" secondAttribute="bottom" constant="-51" id="VXf-kd-g76"/>
                             <constraint firstAttribute="bottomMargin" secondItem="N4I-9y-xia" secondAttribute="bottom" constant="-34" id="WGH-1F-TE5"/>
+                            <constraint firstItem="gdN-zB-wU8" firstAttribute="bottom" secondItem="tC0-ih-0ru" secondAttribute="bottom" id="Wcm-sU-GLx"/>
+                            <constraint firstItem="i4R-g6-kRq" firstAttribute="top" secondItem="XMf-a5-Qqh" secondAttribute="top" constant="43" id="a4n-OE-cPT"/>
                             <constraint firstItem="N4I-9y-xia" firstAttribute="centerX" secondItem="Yvq-a3-Ayv" secondAttribute="centerX" id="ebD-RA-Cjg"/>
-                            <constraint firstItem="i4R-g6-kRq" firstAttribute="top" secondItem="XMf-a5-Qqh" secondAttribute="top" constant="125" id="qKd-qO-Qjf"/>
-                            <constraint firstItem="XMf-a5-Qqh" firstAttribute="trailing" secondItem="i4R-g6-kRq" secondAttribute="trailing" constant="27" id="ugi-bm-67W"/>
+                            <constraint firstItem="of8-yM-uP1" firstAttribute="centerX" secondItem="N4I-9y-xia" secondAttribute="centerX" id="fIg-id-yla"/>
+                            <constraint firstItem="i4R-g6-kRq" firstAttribute="leading" secondItem="Yvq-a3-Ayv" secondAttribute="leadingMargin" id="jXX-8a-o4x"/>
+                            <constraint firstItem="of8-yM-uP1" firstAttribute="top" secondItem="XMf-a5-Qqh" secondAttribute="top" constant="588" id="m6T-Sf-1se"/>
+                            <constraint firstItem="XMf-a5-Qqh" firstAttribute="trailing" secondItem="i4R-g6-kRq" secondAttribute="trailing" constant="27" id="p07-3B-Rvr"/>
+                            <constraint firstItem="tC0-ih-0ru" firstAttribute="leading" secondItem="XMf-a5-Qqh" secondAttribute="leading" constant="181" id="pca-Nv-XpM"/>
+                            <constraint firstItem="gdN-zB-wU8" firstAttribute="leading" secondItem="i4R-g6-kRq" secondAttribute="leading" id="sN9-Vy-dff"/>
                             <constraint firstItem="N4I-9y-xia" firstAttribute="top" secondItem="Yvq-a3-Ayv" secondAttribute="topMargin" constant="-71" id="utM-nm-6Sa"/>
                         </constraints>
                     </view>

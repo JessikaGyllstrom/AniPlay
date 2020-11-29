@@ -28,6 +28,7 @@ class ViewController2: UIViewController {
     var audioplayer = AVAudioPlayer()
     var playerBgMusic = AVAudioPlayer()
     var playerYay = AVAudioPlayer()
+    var playerDoh = AVAudioPlayer()
     
     @IBOutlet weak var scoreLbl: UILabel!
     
@@ -54,14 +55,42 @@ class ViewController2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        playerBgMusic.play()
         
+        let bgMusic = NSURL(fileURLWithPath: Bundle.main.path(forResource: "bgmusic", ofType: "mp3")!)
+
+                do{
+                    playerBgMusic = try AVAudioPlayer(contentsOf: bgMusic as URL)
+                    playerBgMusic.volume = 0.4
+
+                }catch {
+                    print("there was some error. The error was \(error)")
+                }
+        let soundURL = NSURL(fileURLWithPath: Bundle.main.path(forResource: "yay", ofType: "wav")!)
+
+                do{
+                    playerYay = try AVAudioPlayer(contentsOf: soundURL as URL)
+
+                }catch {
+                    print("there was some error. The error was \(error)")
+                }
+        let soundDoh = NSURL(fileURLWithPath: Bundle.main.path(forResource: "doh", ofType: "wav")!)
+
+                do{
+                    playerDoh = try AVAudioPlayer(contentsOf: soundDoh as URL)
+
+                }catch {
+                    print("there was some error. The error was \(error)")
+                }
+        
+        
+    
+     
         
 
         animals.append(Animal(na: "Cow", im: "cow"))
         animals.append(Animal(na: "Fish", im: "fish"))
         animals.append(Animal(na: "Dog", im: "dog"))
-        animals.append(Animal(na: "Bird", im: "bird"))
+        animals.append(Animal(na: "Tiger", im: "tiger"))
         animals.append(Animal(na: "Cat", im: "cat"))
         animals.append(Animal(na: "Owl", im: "owl"))
         animals.append(Animal(na: "Snake", im: "snake"))
@@ -72,10 +101,13 @@ class ViewController2: UIViewController {
         animals.append(Animal(na: "Snail", im: "snail"))
         animals.append(Animal(na: "Rabbit", im: "rabbit"))
         animals.append(Animal(na: "Sheep", im: "sheep"))
-        animals.append(Animal(na: "Frog", im: "frog"))
-
-
-
+        animals.append(Animal(na: "Turtle", im: "turtle"))
+        animals.append(Animal(na: "Duck", im: "duck"))
+        animals.append(Animal(na: "Mouse", im: "mouse"))
+        animals.append(Animal(na: "Seal", im: "seal"))
+        animals.append(Animal(na: "Panda", im: "panda"))
+        animals.append(Animal(na: "Spider", im: "spider"))
+        
         //correct = animals.randomElement()!
         
         
@@ -89,7 +121,7 @@ class ViewController2: UIViewController {
     func newRound()
     {
         playerBgMusic.play()
-     
+
 
         animals.shuffle()
         
@@ -108,12 +140,12 @@ class ViewController2: UIViewController {
         
         if(correctNumber == 0)
         {
-            
-            
+
             print("YEY RÄTT")
             answerCorrect()
             
         } else {
+            
             print("NEJ FEL")
             answerWrong()
         }
@@ -179,37 +211,25 @@ class ViewController2: UIViewController {
     
     func answerWrong()
     {
-        wrongNumber += 1
+        playerDoh.play()
+        scoreLbl.text = "Score: \(points)"
+
      
     }
-    
     func winner()
     {
     performSegue(withIdentifier: "showWinner", sender: self)
     }
-
-    func playBgMusic() {
-        if let musicURL = Bundle.main.url(forResource: "bgMusic", withExtension: "mp3") {
-            if let audioPlayer = try? AVAudioPlayer(contentsOf: musicURL) {
-                playerBgMusic = audioplayer
-                playerBgMusic.play()
-            }
-    
-    func playYay() {
-        if let musicURL = Bundle.main.url(forResource: "yay", withExtension: "wav") {
-                if let audioPlayer = try? AVAudioPlayer(contentsOf: musicURL) {
-                playerYay = audioplayer
-                    playerYay.play()
-                }}
-
+           
+            
     }
         
     
-    }
 
-        }
 
-}
+
+
+
 
     
 
