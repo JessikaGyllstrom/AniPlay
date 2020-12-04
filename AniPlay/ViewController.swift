@@ -15,16 +15,19 @@ class ViewController: UIViewController {
     
     var audioPlayer = AVAudioPlayer()
     
+    @IBOutlet weak var infoBtn: UIButton!
+    @IBOutlet weak var textField: UITextView!
     @IBOutlet weak var playB: UIButton!
     @IBOutlet weak var PawButton: UIButton!
-    
-    @IBOutlet weak var PawButtonCon: NSLayoutConstraint!
-    
-    
+        @IBOutlet weak var PawButtonCon: NSLayoutConstraint!
+        
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        
+
         
         UIView.animate(withDuration: 1.2, delay: 0.1, options: [.curveEaseIn, .repeat], animations: {
             self.PawButton.frame.origin.y -= 150

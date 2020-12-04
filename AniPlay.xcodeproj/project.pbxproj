@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4416C63325743E3300DB7109 /* InfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4416C63225743E3300DB7109 /* InfViewController.swift */; };
 		442CF2FD253DEBB0005FC60F /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442CF2FC253DEBB0005FC60F /* ViewController2.swift */; };
 		443B774A253B882A008C04F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B7749253B882A008C04F8 /* AppDelegate.swift */; };
 		443B774C253B882A008C04F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B774B253B882A008C04F8 /* SceneDelegate.swift */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		09392D20D26E4808D81CC4D5 /* Pods-AniPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AniPlay.release.xcconfig"; path = "Target Support Files/Pods-AniPlay/Pods-AniPlay.release.xcconfig"; sourceTree = "<group>"; };
+		4416C63225743E3300DB7109 /* InfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfViewController.swift; sourceTree = "<group>"; };
 		442CF2FC253DEBB0005FC60F /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		443B7746253B882A008C04F8 /* AniPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AniPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443B7749253B882A008C04F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		443B7748253B882A008C04F8 /* AniPlay */ = {
 			isa = PBXGroup;
 			children = (
+				4416C63225743E3300DB7109 /* InfViewController.swift */,
 				447A572E256BBE2F00056186 /* stars.sks */,
 				443B7749253B882A008C04F8 /* AppDelegate.swift */,
 				443B774B253B882A008C04F8 /* SceneDelegate.swift */,
@@ -265,6 +268,7 @@
 				443B774A253B882A008C04F8 /* AppDelegate.swift in Sources */,
 				443B774C253B882A008C04F8 /* SceneDelegate.swift in Sources */,
 				442CF2FD253DEBB0005FC60F /* ViewController2.swift in Sources */,
+				4416C63325743E3300DB7109 /* InfViewController.swift in Sources */,
 				446144BD256C49C700939AED /* WinViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
