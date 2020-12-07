@@ -31,6 +31,7 @@ class ViewController2: UIViewController {
     var playerDoh = AVAudioPlayer()
     
     @IBOutlet weak var scoreLbl: UILabel!
+
     
     var points = 0
     var wrongNumber = 0
@@ -50,10 +51,16 @@ class ViewController2: UIViewController {
     var correctNumber = 0
     
 
+    
+
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+  
+
+                
         let bgMusic = NSURL(fileURLWithPath: Bundle.main.path(forResource: "bgmusic", ofType: "mp3")!)
 
                 do{
@@ -225,7 +232,7 @@ class ViewController2: UIViewController {
     
     func answerWrong()
     {
-        
+        points += -1
         playerDoh.play()
         scoreLbl.text = "Score: \(points)"
 
@@ -233,9 +240,12 @@ class ViewController2: UIViewController {
     }
     func winner()
     {
+        scoreLbl.text = "Score: \(points)"
+        UserDefaults.standard.set(points, forKey: "score")
     performSegue(withIdentifier: "showWinner", sender: self)
     }
     }
+
             
 
         

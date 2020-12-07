@@ -27,12 +27,16 @@ class WinViewController: UIViewController {
     
     var audioPlayer = AVAudioPlayer()
     
-    
+    var score = UserDefaults.standard.integer(forKey: "score")
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+            ScoreLbl.text = "Score: \(score) /20"
+            ScoreLbl.layer.masksToBounds = true
+            ScoreLbl.layer.cornerRadius = 30
         
+
             
             audioPlayer.play()
             
@@ -106,10 +110,6 @@ class WinViewController: UIViewController {
             completion: nil)
         
     
-        //ScoreLbl.layer.masksToBounds = true
-        //ScoreLbl.layer.cornerRadius = 70
-        
-        
         
     
     
