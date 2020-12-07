@@ -11,6 +11,8 @@ class InfViewController: UIViewController {
 
     @IBOutlet weak var infLbl: UILabel!
     
+    @IBOutlet weak var backBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

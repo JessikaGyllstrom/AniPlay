@@ -12,9 +12,11 @@ import FirebaseStorage
 
 class WinViewController: UIViewController {
         
+    @IBOutlet weak var playAgainBtn: UIButton!
     @IBOutlet weak var thumb: UIImageView!
     @IBOutlet weak var ScoreLbl: UILabel!
     @IBOutlet weak var thumbCon: NSLayoutConstraint!
+    @IBOutlet weak var aboutBtn: UIButton!
     
     @IBOutlet weak var myView: UIImageView!
     @IBOutlet weak var star1: UIImageView!
@@ -31,6 +33,11 @@ class WinViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.playAgainBtn.isHidden = true
+        
+
+        
         
             ScoreLbl.text = "Score: \(score) /20"
             ScoreLbl.layer.masksToBounds = true
@@ -52,6 +59,7 @@ class WinViewController: UIViewController {
             }
             
             audioPlayer.play()
+    
 
         
         UIView.animate(withDuration: 2, delay: 0, options: .curveEaseInOut, animations: {
@@ -108,20 +116,27 @@ class WinViewController: UIViewController {
                 self.star7.frame.size.height += 100
         },
             completion: nil)
+            }
         
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+               self.playAgainBtn.isHidden = false
     
+    
+    }
+    
+    }
+
+    @IBAction func playAgainBtn(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+        self.presentingViewController?.dismiss(animated: true, completion: nil)
+        let myVc = ViewController()
+        self.present(myVc, animated: true, completion: nil)
         
+    }
     
-    
-    }
-    }
-
-    }
-
-
 
                     
-    
+}
     
             
         

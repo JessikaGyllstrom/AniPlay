@@ -20,22 +20,24 @@ class ViewController: UIViewController {
     @IBOutlet weak var playB: UIButton!
     @IBOutlet weak var PawButton: UIButton!
         @IBOutlet weak var PawButtonCon: NSLayoutConstraint!
-        
+    
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         
-        
 
-        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+            audioPlayer.play()
+    
+
+    
         UIView.animate(withDuration: 1.2, delay: 0.1, options: [.curveEaseIn, .repeat], animations: {
-            self.PawButton.frame.origin.y -= 150
-        },
+        self.PawButton.frame.origin.y -= 80
+      },
         completion: nil
             )
         
-        audioPlayer.play()
         
         let storage = Storage.storage()
         let storageRef = storage.reference()
@@ -51,6 +53,7 @@ class ViewController: UIViewController {
         audioPlayer.play()
 
     }
+
     
     @IBAction func ClickPlay(_ sender: UIButton) {
         let soundURL = NSURL(fileURLWithPath: Bundle.main.path(forResource: "yay", ofType: "wav")!)
