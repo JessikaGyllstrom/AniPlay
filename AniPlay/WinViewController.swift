@@ -15,7 +15,6 @@ class WinViewController: UIViewController {
     @IBOutlet weak var thumb: UIImageView!
     @IBOutlet weak var ScoreLbl: UILabel!
     @IBOutlet weak var thumbCon: NSLayoutConstraint!
-    @IBOutlet weak var aboutBtn: UIButton!
     
     @IBOutlet weak var myView: UIImageView!
     @IBOutlet weak var star1: UIImageView!
@@ -23,97 +22,115 @@ class WinViewController: UIViewController {
     @IBOutlet weak var star3: UIImageView!
     @IBOutlet weak var star4: UIImageView!
     @IBOutlet weak var star5: UIImageView!
-    
+    @IBOutlet weak var star6: UIImageView!
     @IBOutlet weak var star7: UIImageView!
-    @IBOutlet weak var star8: UIImageView!
-    @IBOutlet weak var star9: UIImageView!
-    @IBOutlet weak var star10: UIImageView!
-    @IBOutlet weak var star11: UIImageView!
-    
     
     var audioPlayer = AVAudioPlayer()
     
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        ScoreLbl.layer.masksToBounds = true
-        ScoreLbl.layer.cornerRadius = 20
-        
-    
-    do {
-        audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "cheer", ofType: "wav")!))
-    }
-    catch{
-        print(error)
-        
-    }
-    self.audioPlayer.play()
-    
-        
-        UIView.animate(withDuration: 2.0, delay: 0, options: [.repeat], animations: {() -> Void in
-                self.myView?.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
-                self.star1?.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
-                self.star2?.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
-            UIView.animate(withDuration: 5.0, delay: 0, options: [.repeat], animations: {() -> Void in
-
-                self.star3?.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
-                self.star4?.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
-                self.star5?.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
-                UIView.animate(withDuration: 2.0, delay: 0, options: [.repeat], animations: {() -> Void in
-            self.star7?.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
-            self.star8?.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
-            self.star9?.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
-            self.star10?.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
-            self.star11?.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
-
-
-
-
+            
+            audioPlayer.play()
+            
+            let storage = Storage.storage()
+            let storageRef = storage.reference()
+            
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "cheer", ofType: "wav")!))
+            }
+            catch{
+                print(error)
                 
-            }, completion: {(_ finished: Bool) -> Void in
-                UIView.animate(withDuration: 2.0, delay: 0, options: [.repeat], animations: {() -> Void in
-                    self.myView?.transform = CGAffineTransform(scaleX: 3, y: 3)
-                    self.star1?.transform = CGAffineTransform(scaleX: 3, y: 3)
-                    self.star2?.transform = CGAffineTransform(scaleX: 3, y: 3)
-                    UIView.animate(withDuration: 2.0, delay: 0, options: [.repeat], animations: {() -> Void in
+            }
+            
+            audioPlayer.play()
 
-                    self.star3?.transform = CGAffineTransform(scaleX: 3, y: 3)
-                    self.star4?.transform = CGAffineTransform(scaleX: 3, y: 3)
-                    self.star5?.transform = CGAffineTransform(scaleX: 3, y: 3)
-                        UIView.animate(withDuration: 2.0, delay: 0, options: [.repeat], animations: {() -> Void in
-                    self.star7?.transform = CGAffineTransform(scaleX: 3, y: 3)
-                    self.star8?.transform = CGAffineTransform(scaleX: 3, y: 3)
-                    self.star9?.transform = CGAffineTransform(scaleX: 3, y: 3)
-                    self.star10?.transform = CGAffineTransform(scaleX: 3, y: 3)
-                    self.star11?.transform = CGAffineTransform(scaleX: 3, y: 3)
+        
+        UIView.animate(withDuration: 2, delay: 0, options: .curveEaseInOut, animations: {
+            
+
+        self.myView.frame.size.width += 40
+        self.myView.frame.size.height += 40
+        
+            self.star1.frame.size.width += 40
+            self.star1.frame.size.height += 40
+            
+            self.star2.frame.size.width += 40
+            self.star2.frame.size.height += 40
+            
+            self.star3.frame.size.width += 40
+            self.star3.frame.size.height += 40
+            
+            self.star4.frame.size.width += 40
+            self.star4.frame.size.height += 40
+            
+            self.star5.frame.size.width += 40
+            self.star5.frame.size.height += 40
+            
+            self.star6.frame.size.width += 40
+            self.star6.frame.size.height += 40
+            
+            self.star7.frame.size.width += 40
+            self.star7.frame.size.height += 40
+            
+            
+    }){ finished in
+            UIView.animate(withDuration: 2, delay: 0, options: .repeat, animations: {            self.myView.frame.size.width += 100
+            self.myView.frame.size.height += 100
+                
+                self.star1.frame.size.width += 100
+                self.star1.frame.size.height += 100
+                
+                self.star2.frame.size.width += 100
+                self.star2.frame.size.height += 100
+                
+                self.star3.frame.size.width += 100
+                self.star3.frame.size.height += 100
+                
+                self.star4.frame.size.width += 100
+                self.star4.frame.size.height += 100
+                
+                self.star5.frame.size.width += 100
+                self.star5.frame.size.height += 100
+                
+                self.star6.frame.size.width += 100
+                self.star6.frame.size.height += 100
+                
+                self.star7.frame.size.width += 100
+                self.star7.frame.size.height += 100
+        },
+            completion: nil)
+        
+    
+        //ScoreLbl.layer.masksToBounds = true
+        //ScoreLbl.layer.cornerRadius = 70
+        
+        
+        
+    
+    
+    }
+    }
+
+    }
 
 
 
-                })
-                        })
-                                    })
-                    })
-        })
-        })
+                    
+    
+    
             
         
         
         
 
+    
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
-}
 
-        }
 
