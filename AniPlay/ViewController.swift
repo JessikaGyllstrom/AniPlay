@@ -25,36 +25,39 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
 
     }
     override func viewWillAppear(_ animated: Bool) {
-            audioPlayer.play()
-    
-
-    
-        UIView.animate(withDuration: 1.2, delay: 0.1, options: [.curveEaseIn, .repeat], animations: {
-        self.PawButton.frame.origin.y -= 80
-      },
-        completion: nil
-            )
-        
-        
-        let storage = Storage.storage()
-        let storageRef = storage.reference()
-        
+        audioPlayer.play()
         do {
-            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "bgmusic", ofType: "mp3")!))
+            self.audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "bgmusic", ofType: "mp3")!))
         }
         catch{
             print(error)
             
         }
         
-        audioPlayer.play()
+                self.audioPlayer.play()
 
-    }
 
+
+        UIView.animate(withDuration: 1, delay: 1, options: .repeat,animations: {
+            self.PawButton.transform = CGAffineTransform(scaleX: 1, y: 1.5)
+        }) { (finished) in
+            UIView.animate(withDuration: 1, animations: {
+                self.PawButton.transform = CGAffineTransform.identity
+            
+        
+        //let storage = Storage.storage()
+        //let storageRef = storage.reference()
+        
+        
+    })
     
+            }
+    }
     @IBAction func ClickPlay(_ sender: UIButton) {
         let soundURL = NSURL(fileURLWithPath: Bundle.main.path(forResource: "yay", ofType: "wav")!)
 
@@ -64,7 +67,7 @@ class ViewController: UIViewController {
                 }catch {
                     print("there was some error. The error was \(error)")
                 }
-                audioPlayer.play()
+        self.audioPlayer.play()
 
             }
     }

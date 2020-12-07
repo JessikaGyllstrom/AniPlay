@@ -12,6 +12,7 @@ import FirebaseStorage
 
 class WinViewController: UIViewController {
         
+    @IBOutlet weak var aboutTextfield: UILabel!
     @IBOutlet weak var playAgainBtn: UIButton!
     @IBOutlet weak var thumb: UIImageView!
     @IBOutlet weak var ScoreLbl: UILabel!
@@ -27,6 +28,7 @@ class WinViewController: UIViewController {
     @IBOutlet weak var star6: UIImageView!
     @IBOutlet weak var star7: UIImageView!
     
+    
     var audioPlayer = AVAudioPlayer()
     
     var score = UserDefaults.standard.integer(forKey: "score")
@@ -34,9 +36,10 @@ class WinViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.playAgainBtn.isHidden = true
-        
 
+        
+        //self.aboutTextfield.isHidden = true
+        self.playAgainBtn.isHidden = true
         
         
             ScoreLbl.text = "Score: \(score) /20"
@@ -46,9 +49,10 @@ class WinViewController: UIViewController {
 
             
             audioPlayer.play()
+        
             
-            let storage = Storage.storage()
-            let storageRef = storage.reference()
+            //let storage = Storage.storage()
+            //let storageRef = storage.reference()
             
             do {
                 audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "cheer", ofType: "wav")!))
@@ -117,29 +121,24 @@ class WinViewController: UIViewController {
         },
             completion: nil)
             }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                self.playAgainBtn.isHidden = false
-    
-    
+        }
     }
-    
-    }
-
     @IBAction func playAgainBtn(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+       self.dismiss(animated: true, completion: nil)
         self.presentingViewController?.dismiss(animated: true, completion: nil)
         let myVc = ViewController()
         self.present(myVc, animated: true, completion: nil)
         
     }
-    
+    @IBAction func aboutBtn(_ sender: Any) {
+        self.aboutTextfield.isHidden = !self.aboutTextfield.isHidden
 
-                    
 }
     
-            
-        
+}
+
         
         
 
