@@ -224,7 +224,7 @@ class ViewController2: UIViewController {
         newRound()
         
     
-        if points == 3{
+        if points == 19{
             winner()
         }
                     
