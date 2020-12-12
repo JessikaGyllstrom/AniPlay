@@ -44,7 +44,7 @@ class WinViewController: UIViewController {
         
             ScoreLbl.text = "Score: \(score) /20"
             ScoreLbl.layer.masksToBounds = true
-            ScoreLbl.layer.cornerRadius = 30
+            ScoreLbl.layer.cornerRadius = 10
         
 
             
