@@ -47,17 +47,6 @@
 			name = FirebaseAnalytics;
 			productName = FirebaseAnalytics;
 		};
-		DEF5EC9A82178D0D695682390F2DE2F1 /* SAConfettiView */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = DA1E9D5080AA5FAF80AA44A197D17344 /* Build configuration list for PBXAggregateTarget "SAConfettiView" */;
-			buildPhases = (
-			);
-			dependencies = (
-				B63A38055156B1C2B7CB498B8F78C82C /* PBXTargetDependency */,
-			);
-			name = SAConfettiView;
-			productName = SAConfettiView;
-		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
@@ -146,7 +135,6 @@
 		3E1BD693321289455519EFF512E3C2A5 /* GULAppDelegateSwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = FE32CE067FBBEB2ECABF6C0D0C9362C5 /* GULAppDelegateSwizzler.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		3F45C79DBF37653D933A2E101203C53F /* GULMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7780F5D8A945A21B98A6D958218C9E /* GULMutableDictionary.m */; };
 		3F61F01271288C3986E187048022691A /* FBLPromise+Race.h in Headers */ = {isa = PBXBuildFile; fileRef = 824333F087880F9DCE6FD7930741B3BD /* FBLPromise+Race.h */; };
-		3F99059BE54DE926E4E35267D34F50A6 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = EA0DCD514B7DC789FD9FCAE9EF8E91F6 /* star.png */; };
 		3FB0879A374CF90E268B3397B00E5710 /* GDTCORStorageEventSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = C848FCED55E562D19A9B463A0B9EEBC9 /* GDTCORStorageEventSelector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3FF6070A7C686C1602890DF56E620863 /* FIRInstallations.h in Headers */ = {isa = PBXBuildFile; fileRef = DA23014F510090F89F0504CF651C4595 /* FIRInstallations.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40775A052790E4E0EA4C5C2CA6998654 /* GTMSessionFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = B635E0E074D8DBAABC1969AC10BE9D80 /* GTMSessionFetcherService.m */; };
@@ -294,7 +282,6 @@
 		99E58391AE0B28D6FA631D60C61A0F4D /* FIRStorageUploadTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 310CB7C5A6FAC5D07D2E39E90D497AD6 /* FIRStorageUploadTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9ADD712B387AE9C5492D9D6B4E7E6259 /* GULReachabilityChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = C79DEC3C86DE791DEBF3210DF689A397 /* GULReachabilityChecker.m */; };
 		9B3FD02B62CB966AAE205C8A1701D980 /* FBLPromise+Catch.m in Sources */ = {isa = PBXBuildFile; fileRef = 7033A0F1006B43199A86BC98F42C30E2 /* FBLPromise+Catch.m */; };
-		9B61612B1A10E30A01FF6546FAA1049E /* confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = ECFB82E269AE046728F9539FB42A1DEE /* confetti.png */; };
 		9B664D8A610544129BBD632BB2B3B68B /* FIRStorageTaskSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F7E16FBB21522AD0437AA962338144 /* FIRStorageTaskSnapshot.m */; };
 		9E43D5754F01A0FBEB418C711692D6A7 /* GDTCORUploadCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = D7F0D92169E0EA49095F747169229E2B /* GDTCORUploadCoordinator.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9E9D8D40B2D4F1ACE5B4BF3F6128F6DF /* FIRHeartbeatInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A7B97933AEA07B1A5D75B4AB94C290A6 /* FIRHeartbeatInfo.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -339,7 +326,6 @@
 		AD784937E06AE722E2F00EB55293276B /* FBLPromiseError.h in Headers */ = {isa = PBXBuildFile; fileRef = 154776C0652C30747E493F71D85B4B67 /* FBLPromiseError.h */; };
 		ADE752656776E6254C27855939F8AD99 /* FIRStorageTokenAuthorizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E3BC50CF4A866380B1C78EB37ABB79F /* FIRStorageTokenAuthorizer.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		AE79A2D1FC380A4CC8BE614788FF1BD3 /* FBLPromise+Recover.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3E5323B98BF40E618D3053B4A7B11F /* FBLPromise+Recover.m */; };
-		AF4DD01399342A055C64553749FC2679 /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 78C39DACA327CD50EFA9921BD7F4131C /* triangle.png */; };
 		AFDF0333FD3A8357AEF99A35EC5E4107 /* Pods-AniPlay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D93E0D258CDA62C6316792DAA21F5D99 /* Pods-AniPlay-dummy.m */; };
 		B0B786CA01F7EE495B5227B90F65BE32 /* Pods-AniPlay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 478EFBA32B0317EEA5558269BD5604B0 /* Pods-AniPlay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B11427D71FC91BF57A08582A91A2D499 /* FBLPromise+Then.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 3A717AD631119F2E648E806354573099 /* FBLPromise+Then.h */; };
@@ -418,7 +404,6 @@
 		E4C974BA2926E0DFB50EA80F45476258 /* FBLPromise+Async.h in Headers */ = {isa = PBXBuildFile; fileRef = BC9CCAE16CD9C535FC738E440A0DB372 /* FBLPromise+Async.h */; };
 		E67E02D0B021F19966EE554949D068CE /* GULHeartbeatDateStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B1BB094342F9AABEBD21747A940661 /* GULHeartbeatDateStorage.m */; };
 		E69CE56E44D0F54FF6F5D4284C853863 /* FIRInstallationsSingleOperationPromiseCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B676F64ED5E43BB7E384364C7ECAD80F /* FIRInstallationsSingleOperationPromiseCache.m */; };
-		E7FD481FC1BCC25E12CDAF0E02D65F08 /* diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = BB1E8A274E18E06B8780B732F9959168 /* diamond.png */; };
 		E8567022B9B785A5763819365857D33C /* FIRInstallationsLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D3671AA18344241C0EEFEC3B6EF2A3 /* FIRInstallationsLogger.m */; };
 		E89B2E4A546163056FBB4114D1522F55 /* FIRInstallationsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F58B1815C43D6485D729052656ED2EB /* FIRInstallationsStore.m */; };
 		E89CA40BE3319A7546F9DFAEAE5DBC42 /* FBLPromise+All.h in Headers */ = {isa = PBXBuildFile; fileRef = 88CA0AE13E6C92DD623AFEA5823C4045 /* FBLPromise+All.h */; };
@@ -544,13 +529,6 @@
 			remoteGlobalIDString = 8D7F5D5DD528D21A72DC87ADA5B12E2D;
 			remoteInfo = GoogleUtilities;
 		};
-		83FC8D07240DD743DB3BCC190F8D8039 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DEF5EC9A82178D0D695682390F2DE2F1;
-			remoteInfo = SAConfettiView;
-		};
 		872EC80294084E4C4E6035B8247B48F7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -669,13 +647,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 23E7C4A52360C026F97E4A96D91B03CE;
 			remoteInfo = FirebaseStorage;
-		};
-		D7A5A977965777793085BABD62E5B11E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1E488B4A8341D4A1374B44B7D0191BC4;
-			remoteInfo = "SAConfettiView-SAConfettiView";
 		};
 		E483A56F811EB752AABC2FE41F59AEC4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1147,7 +1118,6 @@
 		E6A98F13D39C2C2AF11500116E8956F8 /* pb_encode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_encode.h; sourceTree = "<group>"; };
 		E6AD05D701049581BAB0DBFA34887AFC /* FIRCoreDiagnosticsConnector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRCoreDiagnosticsConnector.m; path = FirebaseCore/Sources/FIRCoreDiagnosticsConnector.m; sourceTree = "<group>"; };
 		E7A4ECC089B1527E473884F188BE06CD /* GDTCORAssert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORAssert.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORAssert.m; sourceTree = "<group>"; };
-		E94B64C2BD13E14D90FC9CA3977F42AF /* SAConfettiView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAConfettiView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0DCD514B7DC789FD9FCAE9EF8E91F6 /* star.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = star.png; path = Pod/Assets/star.png; sourceTree = "<group>"; };
 		EA371DBC636A64989B171353CAD6F798 /* FirebaseStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FirebaseStorage.h; path = FirebaseStorage/Sources/Public/FirebaseStorage/FirebaseStorage.h; sourceTree = "<group>"; };
 		EB60B9E471431EAAF04663BDC80A8B17 /* FIRStorageTaskSnapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRStorageTaskSnapshot.h; path = FirebaseStorage/Sources/Public/FirebaseStorage/FIRStorageTaskSnapshot.h; sourceTree = "<group>"; };
@@ -1220,13 +1190,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3987638074780D0299B7D7ECC96730D3 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		250146644B6D2C7171115457E0B1E559 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2073,7 +2036,6 @@
 				C1998E0D8085221AD87F89B614C10E52 /* GTMSessionFetcher.framework */,
 				06FC5C9CF96D60C50FCD47D339C91951 /* nanopb.framework */,
 				AFC58F145A94F74632DB11D42BCA4910 /* Pods_AniPlay.framework */,
-				E94B64C2BD13E14D90FC9CA3977F42AF /* SAConfettiView.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2432,23 +2394,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1E488B4A8341D4A1374B44B7D0191BC4 /* SAConfettiView-SAConfettiView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A87EE898A1A7EBEA743E510A4867F963 /* Build configuration list for PBXNativeTarget "SAConfettiView-SAConfettiView" */;
-			buildPhases = (
-				27FAA917244F37775110210C250A26DE /* Sources */,
-				250146644B6D2C7171115457E0B1E559 /* Frameworks */,
-				09075736D9B7D8472A3A0F0D557E8079 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "SAConfettiView-SAConfettiView";
-			productName = "SAConfettiView-SAConfettiView";
-			productReference = E94B64C2BD13E14D90FC9CA3977F42AF /* SAConfettiView.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 		23E7C4A52360C026F97E4A96D91B03CE /* FirebaseStorage */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5155FD171D3AE810B09352587ADA1583 /* Build configuration list for PBXNativeTarget "FirebaseStorage" */;
@@ -2630,7 +2575,6 @@
 				F8AB3A24972A0C20D248916322802823 /* PBXTargetDependency */,
 				8FF721CEBAC0A0B8B0B5293EF30AD3E4 /* PBXTargetDependency */,
 				FB54E306222B517CDC1BA8D230C0F40B /* PBXTargetDependency */,
-				48398416BBFEEB98620FAE2FDB293D2B /* PBXTargetDependency */,
 				1432A545A90A27E5FFAD77315CF9473C /* PBXTargetDependency */,
 			);
 			name = "Pods-AniPlay";
@@ -2691,24 +2635,11 @@
 				D2B5E7DCCBBFB32341D857D01211A1A3 /* nanopb */,
 				D4DD92AB47F99CD7B3E4637262B4CBA3 /* Pods-AniPlay */,
 				2BBF7206D7FAC92C82A042A99C4A98F8 /* PromisesObjC */,
-				DEF5EC9A82178D0D695682390F2DE2F1 /* SAConfettiView */,
-				1E488B4A8341D4A1374B44B7D0191BC4 /* SAConfettiView-SAConfettiView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		09075736D9B7D8472A3A0F0D557E8079 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9B61612B1A10E30A01FF6546FAA1049E /* confetti.png in Resources */,
-				E7FD481FC1BCC25E12CDAF0E02D65F08 /* diamond.png in Resources */,
-				3F99059BE54DE926E4E35267D34F50A6 /* star.png in Resources */,
-				AF4DD01399342A055C64553749FC2679 /* triangle.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		32547C835357B2EFFA51F460CB7AD970 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2825,13 +2756,6 @@
 				C5501A05030571A44381A285743824A0 /* FIRInstallationsStoredAuthToken.m in Sources */,
 				EDA30E2268A1561A9C581C96D693769C /* FIRInstallationsStoredItem.m in Sources */,
 				BADD378226390AB16DD1E312A3A44900 /* FIRInstallationsVersion.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		27FAA917244F37775110210C250A26DE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3049,12 +2973,6 @@
 			target = 8D7F5D5DD528D21A72DC87ADA5B12E2D /* GoogleUtilities */;
 			targetProxy = 9B80E8F42F9D7581D2B1A631ECA1A2C4 /* PBXContainerItemProxy */;
 		};
-		48398416BBFEEB98620FAE2FDB293D2B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SAConfettiView;
-			target = DEF5EC9A82178D0D695682390F2DE2F1 /* SAConfettiView */;
-			targetProxy = 83FC8D07240DD743DB3BCC190F8D8039 /* PBXContainerItemProxy */;
-		};
 		4E5B33756A2CE1999879B0949FFD2CAC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Firebase;
@@ -3132,12 +3050,6 @@
 			name = FirebaseCoreDiagnostics;
 			target = 620E05868772C10B4920DC7E324F2C87 /* FirebaseCoreDiagnostics */;
 			targetProxy = B79DE4A9A32EA13E81B433B26B87914B /* PBXContainerItemProxy */;
-		};
-		B63A38055156B1C2B7CB498B8F78C82C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "SAConfettiView-SAConfettiView";
-			target = 1E488B4A8341D4A1374B44B7D0191BC4 /* SAConfettiView-SAConfettiView */;
-			targetProxy = D7A5A977965777793085BABD62E5B11E /* PBXContainerItemProxy */;
 		};
 		C211586D86453B837FBE296E0BAD398F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3370,23 +3282,6 @@
 			};
 			name = Debug;
 		};
-		4A0ED9E955D2915B1FF58D9F2192291A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74BE5548961CA8FC70A4FF448BA7B0C6 /* SAConfettiView.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SAConfettiView";
-				IBSC_MODULE = SAConfettiView;
-				INFOPLIST_FILE = "Target Support Files/SAConfettiView/ResourceBundle-SAConfettiView-SAConfettiView-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = SAConfettiView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		4B99338E56998EF58373FE80F9C07B15 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EE58E5A655CFB0FE0FF5E80C7D105626 /* FirebaseAnalytics.debug.xcconfig */;
@@ -3419,22 +3314,6 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		5577B36C8361091FA1C8BE8B432E597E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74BE5548961CA8FC70A4FF448BA7B0C6 /* SAConfettiView.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
 		};
 		55ACA78CD2E9FAA6FBC84515818EA696 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -3763,23 +3642,6 @@
 			};
 			name = Debug;
 		};
-		8E118F9494B9C9B57FE8859A6E870519 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E4121EBA3351F9B41F61FC6B0A12132 /* SAConfettiView.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SAConfettiView";
-				IBSC_MODULE = SAConfettiView;
-				INFOPLIST_FILE = "Target Support Files/SAConfettiView/ResourceBundle-SAConfettiView-SAConfettiView-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = SAConfettiView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		9A41D6ADA8F35E17AB0F88E310BAE164 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2EBC73859EB4CC604C5A286078A430EC /* Pods-AniPlay.debug.xcconfig */;
@@ -4017,23 +3879,6 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C481159EE1B77127BDF79512EB95EFB3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E4121EBA3351F9B41F61FC6B0A12132 /* SAConfettiView.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -4319,24 +4164,6 @@
 			buildConfigurations = (
 				F2DE4443A566235686ECD165CA14050C /* Debug */,
 				C8D1269B3E3B0B610F79F264D414E066 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A87EE898A1A7EBEA743E510A4867F963 /* Build configuration list for PBXNativeTarget "SAConfettiView-SAConfettiView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4A0ED9E955D2915B1FF58D9F2192291A /* Debug */,
-				8E118F9494B9C9B57FE8859A6E870519 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DA1E9D5080AA5FAF80AA44A197D17344 /* Build configuration list for PBXAggregateTarget "SAConfettiView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5577B36C8361091FA1C8BE8B432E597E /* Debug */,
-				C481159EE1B77127BDF79512EB95EFB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
