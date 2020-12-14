@@ -18,6 +18,7 @@ class WinViewController: UIViewController {
     @IBOutlet weak var ScoreLbl: UILabel!
     @IBOutlet weak var thumbCon: NSLayoutConstraint!
     @IBOutlet weak var aboutBtn: UIButton!
+    @IBOutlet weak var failLbl: UILabel!
     
     @IBOutlet weak var myView: UIImageView!
     @IBOutlet weak var star1: UIImageView!
@@ -32,6 +33,8 @@ class WinViewController: UIViewController {
     var audioPlayer = AVAudioPlayer()
     
     var score = UserDefaults.standard.integer(forKey: "score")
+    var wrong = UserDefaults.standard.integer(forKey: "fails")
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,18 +44,28 @@ class WinViewController: UIViewController {
         //self.aboutTextfield.isHidden = true
         self.playAgainBtn.isHidden = true
         
-        
-            ScoreLbl.text = "Score: \(score) /20"
+        ScoreLbl.numberOfLines = 0
+        //ScoreLbl.lineBreakMode = NSLineBreakMode.byWordWrapping
+
+        ScoreLbl.text = "Score: \(score)\n(Fails: \(wrong))"
+
             ScoreLbl.layer.masksToBounds = true
             ScoreLbl.layer.cornerRadius = 10
         
+        //failLbl.text = "Wrong:" + "\(wrong)"
+
+        
+   
+            //self.failLbl.text = "Number of Wrongs: \(wrong)"
+        
 
             
-            audioPlayer.play()
         
-            
-            //let storage = Storage.storage()
-            //let storageRef = storage.reference()
+
+      
+        
+        audioPlayer.play()
+        
             
             do {
                 audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "cheer", ofType: "wav")!))

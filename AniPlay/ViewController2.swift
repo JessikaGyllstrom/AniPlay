@@ -31,10 +31,12 @@ class ViewController2: UIViewController {
     var playerDoh = AVAudioPlayer()
     
     @IBOutlet weak var scoreLbl: UILabel!
+    
 
     
     var points = 0
     var wrongNumber = 0
+    var wrong = 0
     
     
     @IBOutlet weak var button1: UIButton!
@@ -111,7 +113,12 @@ class ViewController2: UIViewController {
         animals.append(Animal(na: "Mouse", im: "mouse"))
         animals.append(Animal(na: "Seal", im: "seal"))
         animals.append(Animal(na: "Panda", im: "panda"))
-        animals.append(Animal(na: "Spider", im: "spider"))
+        animals.append(Animal(na: "Horse", im: "horse"))
+        animals.append(Animal(na: "Beaver", im: "beaver"))
+        animals.append(Animal(na: "Moose", im: "moose"))
+        animals.append(Animal(na: "Skunk", im: "skunk"))
+        animals.append(Animal(na: "Parrot", im: "parrot"))
+
         
         //correct = animals.randomElement()!
         
@@ -224,7 +231,7 @@ class ViewController2: UIViewController {
         newRound()
         
     
-        if points == 20{
+        if points == 3{
             winner()
         }
                     
@@ -234,7 +241,13 @@ class ViewController2: UIViewController {
     {
         points += -1
         playerDoh.play()
+        
         scoreLbl.text = "Score: \(points)"
+        
+        wrong += +1
+        UserDefaults.standard.set(wrong, forKey: "fails")
+
+
 
      
     }
