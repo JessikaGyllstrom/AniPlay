@@ -35,34 +35,27 @@ class WinViewController: UIViewController {
     var score = UserDefaults.standard.integer(forKey: "score")
     var wrong = UserDefaults.standard.integer(forKey: "fails")
     
+    
+   
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+  
+        
         
         //self.aboutTextfield.isHidden = true
         self.playAgainBtn.isHidden = true
         
-        ScoreLbl.numberOfLines = 0
-        //ScoreLbl.lineBreakMode = NSLineBreakMode.byWordWrapping
-
-        ScoreLbl.text = "Score: \(score)\n(Fails: \(wrong))"
+        ScoreLbl.text = "Score: \(score)"
 
             ScoreLbl.layer.masksToBounds = true
             ScoreLbl.layer.cornerRadius = 10
         
-        //failLbl.text = "Wrong:" + "\(wrong)"
+        failLbl.text = "Fails: \(wrong)"
+        failLbl.layer.masksToBounds = true
+        failLbl.layer.cornerRadius = 10
 
-        
-   
-            //self.failLbl.text = "Number of Wrongs: \(wrong)"
-        
-
-            
-        
-
-      
         
         audioPlayer.play()
         
